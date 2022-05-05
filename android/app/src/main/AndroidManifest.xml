@@ -30,5 +30,17 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+
+    <!--Appwrite code-->
+       <!-- Add this inside the `<application>` tag, along side the existing `<activity>` tags -->
+       <activity android:name="com.linusu.flutter_web_auth.CallbackActivity" android:exported="true">
+           <intent-filter android:label="flutter_web_auth">
+               <action android:name="android.intent.action.VIEW" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <category android:name="android.intent.category.BROWSABLE" />
+               <data android:scheme="appwrite-callback-62721b7fcb0281e68ff1" />
+           </intent-filter>
+       </activity>
     </application>
 </manifest>
