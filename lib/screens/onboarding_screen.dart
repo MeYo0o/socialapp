@@ -63,7 +63,7 @@ class OnboardingScreen extends StatelessWidget {
                     email: 'me@appwrite.io',
                     password: 'password',
                     name: 'My Name');
-                print(user.runtimeType);
+                debugPrint(user.runtimeType.toString());
                 debugPrint(user.toString());
               } on SocketException {
                 debugPrint('Connection Error!');
