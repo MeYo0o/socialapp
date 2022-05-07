@@ -7,9 +7,10 @@ import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:socialapp/core/constants.dart';
 import 'package:socialapp/core/utils.dart';
-import 'package:socialapp/screens/widgets/onboarding_screen/intro1.dart';
-import 'package:socialapp/screens/widgets/onboarding_screen/intro2.dart';
-import 'package:socialapp/screens/widgets/onboarding_screen/intro3.dart';
+
+import '../widgets/onboarding_screen/intro1.dart';
+import '../widgets/onboarding_screen/intro2.dart';
+import '../widgets/onboarding_screen/intro3.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -46,7 +47,6 @@ class OnboardingScreen extends StatelessWidget {
             child: const Text('Execute Function'),
             onPressed: () async {
               // AppUtils.customSnackBar(message: 'hello');
-
 
               Client client = Client();
 

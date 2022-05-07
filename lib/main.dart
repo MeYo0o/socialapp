@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/route_manager.dart';
 import 'package:socialapp/core/constants.dart';
 import 'package:socialapp/screens/onboarding_screen.dart';
 
@@ -18,11 +19,12 @@ class MySocialApp extends StatelessWidget {
       designSize: AppSettings.designSize,
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (child) => MaterialApp(
+      builder: (child) => GetMaterialApp(
         title: 'Social App',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          // primarySwatch: Colors.blue,
+
           textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
         ),
         home: child,
